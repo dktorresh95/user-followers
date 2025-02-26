@@ -1,0 +1,13 @@
+    <h2 class="text-center text-primary">Seguidores de {{ username }}</h2>
+    <div class="d-flex justify-content-center">
+        <ul class="list-group w-50">
+            <li *ngFor="let follower of (followers$ | async)" class="list-group-item d-flex align-items-center justify-content-center text-center">
+                <div class="d-flex flex-column align-items-center w-100">
+                  <img [src]="follower.avatar_url" width="50" class="mb-2">
+                  <a [href]="follower.html_url" target="_blank" class="text-decoration-none">{{ follower.login }}</a>
+                </div>
+              </li>
+        </ul>
+    </div>
+
+
