@@ -3,7 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { FollowersComponent } from './followers.component';
 
 const routes: Routes = [
-  { path: '', component: FollowersComponent }
+  { path: 'followers/:username', component: FollowersComponent }
 ];
 
 @NgModule({

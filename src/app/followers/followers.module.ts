@@ -12,6 +12,7 @@ import { FollowersComponent } from './followers.component';
   imports: [
     CommonModule,
     FollowersRoutingModule
-  ]
+  ],
+  exports: [FollowersComponent]
 })
 export class FollowersModule { }
